@@ -1,0 +1,81 @@
+@use 'elements/size'as s;
+@use 'elements/breakpoints'as b;
+
+.search-results {
+    margin-bottom: s.$gap-n;
+
+    li {
+        margin-bottom: s.$gap-s;
+    }
+}
+
+.page-blog {
+    padding-bottom: s.$gap-n;
+
+    article {
+        overflow: hidden;
+        border-bottom: 1px solid var(--border);
+        padding-top: s.$gap-n;
+
+        &:last-of-type {
+            border: none;
+        }
+    }
+}
+
+.post-img {
+    margin-bottom: s.$gap-n;
+}
+
+.color {
+    overflow: hidden;
+}
+
+.bg-color-1 {
+    background: var(--bg-color-1);
+    color: var(--bg-color-font-1);
+}
+
+.bg-color-2 {
+    background: var(--bg-color-2);
+    color: var(--bg-color-font-2);
+}
+
+.bg-color-3 {
+    background: var(--bg-color-3);
+    color: var(--bg-color-font-3);
+}
+
+.bg-color-4 {
+    background: var(--bg-color-4);
+    color: var(--bg-color-font-4);
+}
+
+.bg-color-5 {
+    background: var(--bg-color-5);
+    color: var(--bg-color-font-5);
+}
+
+.parallax {
+    background-image: url("img/parallax.jpg");
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--parallax-font);
+}
+
+@media (min-width: b.$menu-break) {
+    .parallax {
+        background-attachment: fixed;
+    }
+}
+
+.menu-widget {
+    margin: s.$gap-n s.$gap-s s.$gap-s 0;
+}
+@media (min-width: b.$menu-break) {
+    .menu-widget {
+        display: none;
+    }
+}

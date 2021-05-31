@@ -1,0 +1,109 @@
+@use 'elements/breakpoints'as b;
+@use 'elements/size'as s;
+
+@media (min-width: b.$menu-break) {
+    .menu {
+        display: flex; //block;
+        flex: auto;
+        font-size: s.$font-s;
+        //flex: 1;
+        &.right-align {
+            margin-left: auto;
+        }
+        ul {
+            display: flex;
+            background: var(--menu-desktop-bg);
+
+            ul {
+                display: none;
+                position: absolute;
+                left: 0;
+                min-width: 250px;
+                line-height: 1.2;
+                background: var(--menu-desktop-sub-bg);
+                box-shadow: 0 0 20px rgb(0 0 0 / 5%);
+
+                li {
+                    padding: 0 1rem;
+                    border-bottom: 1px solid var(--menu-desktop-sub-border);
+                    transition: .3s background;
+
+                    &:last-of-type {
+                        border: none;
+                    }
+
+                    &:hover {
+                        background-color: var(--menu-desktop-sub-hover-bg);
+                    }
+                }
+
+                ul {
+                    left: 100%;
+                    top: 0;
+                }
+            }
+
+            li {
+                position: relative;
+
+                &:hover {
+                    >ul {
+                        display: block;
+                    }
+                }
+
+
+            }
+        }
+
+        a {
+            padding: .5rem;
+            color: var(--menu-desktop-font);
+        };
+        li li {
+            a {
+                color: var(--menu-desktop-sub-font);
+            }
+        }
+> ul {
+    > li {
+
+        &:last-of-type {
+
+            ul {
+                        left: auto;
+                        right: 0;
+
+                        ul {
+                            left: auto;
+                            right: 100%;
+                        }
+                    }
+        }
+    }
+}
+    }
+
+    .menu-close {
+        display: none;
+    }
+
+    .has-sub {
+        background-image: url(img/has-sub.svg);
+        background-repeat: no-repeat;
+        background-size: 7px;
+        background-position: 10px center;
+    }
+
+    // Right-alin menu
+    .menu.right-align {
+        ul ul {
+            left: auto;
+            right: 0;
+            ul {
+                left: auto;
+                right: 100%;
+            }
+        }
+    }
+}
