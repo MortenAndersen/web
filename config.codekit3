@@ -9,12 +9,6 @@
 	],
 "creatorBuild": "33081",
 "files": {
-	"/.idea": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/.idea",
-		"oF": 0
-		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
