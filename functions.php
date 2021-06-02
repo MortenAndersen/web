@@ -11,7 +11,7 @@ add_action('init', function () {
 // Theme jQuery fil
 function web_scripts()
 {
-    wp_register_script('theme-script', get_template_directory_uri() . '/js/theme-min.js', array('jquery'));
+    wp_register_script('theme-script', get_template_directory_uri() . '/js/starter-min.js', array('jquery'));
     wp_enqueue_script('theme-script');
 }
 add_action('wp_enqueue_scripts', 'web_scripts');

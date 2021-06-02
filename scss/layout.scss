@@ -12,6 +12,11 @@
     padding: s.$gap-n 0;
 }
 
+section {
+    > .wrap {
+        padding: s.$gap-n;
+    }
+}
 .page-header {
     line-height: 1;
     padding-left: s.$gap-n;

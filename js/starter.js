@@ -1,3 +1,5 @@
+// @codekit-prepend "bx-slider.js", "fitvids.js", "lightbox.js" quiet;
+
 /*global jQuery*/
 (function ($) {
     "use strict";
@@ -49,6 +51,21 @@
                 captions: true,
                 slideWidth: 600
             });
+        });
+
+        $('.bx-carousel').bxSlider({
+            auto: true,
+            autoHover: true,
+            pager: false,
+            shrinkItems: true,
+            minSlides: 1,
+            maxSlides: 5,
+            slideWidth: 269,
+            slideMargin: 20,
+            moveSlides: 4,
+            mode: 'horizontal',
+            nextText: ' > ',
+            prevText: ' < '
         });
 
 });
