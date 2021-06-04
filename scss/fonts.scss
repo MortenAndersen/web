@@ -22,6 +22,10 @@ h6 {
     font-size: s.$font-l;
     margin: 0 0 1rem 0;
     font-weight: 400;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .widget-title {

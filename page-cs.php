@@ -9,7 +9,7 @@ get_header(); ?>
 		</article>
 	</div>
 		<section class="color bg-color-1">
-			<div class="wrap grid g-d-3 gap-2">
+			<div class="wrap grid g-d-3 gap-2 pad-4">
 				<div class="col">
 		<p>Nostra nec pretium ex, aliquam diam. Magna dicta? Ligula sequi augue. Fuga. Parturient fames! Molestie wisi? Corrupti, earum facere egestas? Elit netus dapibus voluptas! Congue voluptatem fugiat commodo fuga ducimus in ab, architecto praesent ducimus.</p>
 </div>

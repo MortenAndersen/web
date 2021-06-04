@@ -59,13 +59,14 @@
             pager: false,
             shrinkItems: true,
             minSlides: 1,
-            maxSlides: 5,
+            maxSlides: 9,
             slideWidth: 269,
             slideMargin: 20,
             moveSlides: 4,
             mode: 'horizontal',
             nextText: ' > ',
-            prevText: ' < '
+            prevText: ' < ',
+            adaptiveHeight: true 
         });
 
 });
