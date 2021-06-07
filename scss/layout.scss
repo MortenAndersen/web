@@ -56,7 +56,7 @@ aside {
 }
 
 .footer-col {
-    >*:last-of-type {
+    >*:last-of-type:not(.widget-title-footer) {
         margin-bottom: 0;
     }
 }
