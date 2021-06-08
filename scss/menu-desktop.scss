@@ -24,7 +24,7 @@
                 box-shadow: 0 0 20px rgb(0 0 0 / 5%);
 
                 li {
-                    padding: 0 1rem;
+                    padding: 0 var(--menu-desktop-sub-pad-side);
                     border-bottom: 1px solid var(--menu-desktop-sub-border);
                     transition: .3s background;
 
@@ -34,6 +34,14 @@
 
                     &:hover {
                         background-color: var(--menu-desktop-sub-hover-bg);
+                    }
+                    a[aria-current=page] {
+                        margin-left: calc(var(--menu-desktop-sub-pad-side) * -1);
+                        margin-right: calc(var(--menu-desktop-sub-pad-side) * -1);
+                        background: var(--menu-desktop-sub-current-bg);
+                        color: var(--menu-desktop-sub-current-font);
+                        padding-left: calc(var(--menu-desktop-sub-pad-side) + .5rem);
+                        padding-right: calc(var(--menu-desktop-sub-pad-side) + .5rem);
                     }
                 }
 
