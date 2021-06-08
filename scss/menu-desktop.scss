@@ -65,12 +65,13 @@
         }
 
         a {
-            padding: .5rem;
             color: var(--menu-desktop-font);
+            padding: var(--menu-desktop-pad);
         };
         li li {
             a {
                 color: var(--menu-desktop-sub-font);
+                padding: var(--menu-desktop-sub-pad);
             }
         }
 > ul {
