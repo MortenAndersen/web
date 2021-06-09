@@ -1,4 +1,5 @@
 @use 'elements/size'as s;
+@use 'elements/breakpoints'as b;
 
 :root {
     --body-color: red;
@@ -22,10 +23,12 @@ h6 {
     font-size: s.$font-l;
     margin: 0 0 1rem 0;
     font-weight: 400;
+
     a {
         text-decoration: none;
         color: inherit;
     }
+
     article & {
         margin: 0;
         font-weight: bold;
@@ -44,6 +47,7 @@ h6 {
 
 p {
     margin: 0 0 1.75rem 0;
+
     article & {
         max-width: 90ch;
     }
@@ -96,7 +100,9 @@ hr {
         color: inherit;
     }
 }
-
+.bold {
+    font-weight: bold;
+}
 .caption {
     text-align: right;
     font-style: italic;
