@@ -9,6 +9,7 @@
         //flex: 1;
         &.right-align {
             margin-left: auto;
+            flex: inherit;
         }
         ul {
             display: flex;
@@ -106,7 +107,7 @@
 
     // Right-alin menu
     .menu.right-align {
-        ul ul {
+        > ul > li:last-of-type ul {
             left: auto;
             right: 0;
             ul {

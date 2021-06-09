@@ -14,7 +14,6 @@
 	<div class="flex <?php web_header_style(); ?>">
 		<?php web_logo();?>
 			<div class="menu-icon">
-				<!-- <img class="js-menu-open" src="<?php echo get_template_directory_uri(); ?>/img/menu-icon.svg" alt="menu"> -->
 				<?php get_template_part('img/menu', 'icon');?>
 			</div>
 			<?php get_template_part('template-parts/nav/main', 'menu');?>
