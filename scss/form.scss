@@ -49,6 +49,7 @@ form[role=search] {
             color: var(--mobile-search-text-font);
             border-color: var(--mobile-search-border);
             transition: 1s background;
+            height: 3rem;
             &:focus {
                 background: var(--mobile-search-text-focus-bg);
             }
@@ -57,6 +58,7 @@ form[role=search] {
             background: var(--mobile-search-submit-bg);;
             color: var(--mobile-search-submit-font);;
             border-color: var(--mobile-search-border);
+            height: 3rem;
         }
     }
     }
