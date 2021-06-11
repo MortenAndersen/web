@@ -39,9 +39,14 @@ section {
 main {
     overflow: hidden;
     background: var(--main-bg);
+    .wrap {
+        padding: s.$gap-n * 1.5 s.$gap-n ;
+    }
 }
 
-article {}
+article {
+    overflow: hidden;
+}
 
 aside {
     font-size: s.$font-s;
