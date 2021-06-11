@@ -126,3 +126,10 @@ hr {
     font-size: s.$font-xs;
     margin-top: s.$gap-xs;
 }
+.textwidget {
+    p {
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+}
