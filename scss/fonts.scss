@@ -51,6 +51,10 @@ p {
     article & {
         max-width: 90ch;
     }
+    &.read-more {
+        margin: 0;
+        text-align: right;
+    }
 }
 
 a {
