@@ -36,14 +36,6 @@
                     &:hover {
                         background-color: var(--menu-desktop-sub-hover-bg);
                     }
-                    a[aria-current=page] {
-                        margin-left: calc(var(--menu-desktop-sub-pad-side) * -1);
-                        margin-right: calc(var(--menu-desktop-sub-pad-side) * -1);
-                        background: var(--menu-desktop-sub-current-bg);
-                        color: var(--menu-desktop-sub-current-font);
-                        padding-left: calc(var(--menu-desktop-sub-pad-side) + .5rem);
-                        padding-right: calc(var(--menu-desktop-sub-pad-side) + .5rem);
-                    }
                 }
 
                 ul {
@@ -68,11 +60,23 @@
         a {
             color: var(--menu-desktop-font);
             padding: var(--menu-desktop-pad);
+            &[aria-current=page] {
+                color: var(--menu-desktop-current-font);
+                background: var(--menu-desktop-current-bg);
+            }
         };
         li li {
             a {
                 color: var(--menu-desktop-sub-font);
                 padding: var(--menu-desktop-sub-pad);
+                &[aria-current=page] {
+                        margin-left: calc(var(--menu-desktop-sub-pad-side) * -1);
+                        margin-right: calc(var(--menu-desktop-sub-pad-side) * -1);
+                        background: var(--menu-desktop-sub-current-bg);
+                        color: var(--menu-desktop-sub-current-font);
+                        padding-left: calc(var(--menu-desktop-sub-pad-side) + .5rem);
+                        padding-right: calc(var(--menu-desktop-sub-pad-side) + .5rem);
+                    }
             }
         }
 > ul {

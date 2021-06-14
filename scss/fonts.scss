@@ -40,6 +40,7 @@ h6 {
     font-size: s.$font-n;
     padding-bottom: .5rem;
     margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
 }
 
 .entry-title {
@@ -53,18 +54,29 @@ p {
     article & {
         max-width: 90ch;
     }
+
     &.read-more {
-        margin: 0;
+        margin: auto 0 0 0;
         text-align: right;
         line-height: 1;
+        text-transform: uppercase;
+        font-size: .85rem;
+
         a {
             text-decoration: none;
+
             &:hover {
-                text-decoration: underline;
+                
+                &:before {
+                    opacity: 1;
+                }
             }
+
             &:before {
                 content: '\2192';
                 padding-right: 1ch;
+                opacity: .6;
+                transition: .5s opacity;
             }
         }
     }
@@ -74,6 +86,12 @@ a {
     color: var(--link);
     text-decoration: underline;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    .page-footer & {
+        color: inherit;
+        &:hover {
+            color: inherit;
+        }
+    }
 }
 
 a:focus,
@@ -114,18 +132,21 @@ hr {
 
     a {
         text-decoration: none;
-        color: inherit;
+        color: var(--logo-text);
     }
 }
+
 .bold {
     font-weight: bold;
 }
+
 .caption {
     text-align: right;
     font-style: italic;
     font-size: s.$font-xs;
     margin-top: s.$gap-xs;
 }
+
 .textwidget {
     p {
         &:last-of-type {
