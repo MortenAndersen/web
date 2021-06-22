@@ -19,3 +19,7 @@
 			<?php get_template_part('template-parts/nav/main', 'menu');?>
 	</div>
 </header>
+
+<?php if (is_active_sidebar('pre-content')) {
+    dynamic_sidebar('pre-content');
+} ?>

@@ -27,6 +27,32 @@ function mother_widgets_init()
         )
     );
 
+    // Pre content
+    register_sidebar(
+        array(
+            'name'          => __('Pre content', 'web-doamin'),
+            'id'            => 'pre-content',
+            'description'   => __('Widget før indhold', 'web-doamin'),
+            'before_widget' => '<div id="%1$s" class="widget pre-content-col %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4 class="widget-title widget-title-pre-content">',
+            'after_title'   => '</h4>',
+        )
+    );
+
+    // Post content
+    register_sidebar(
+        array(
+            'name'          => __('Post content', 'web-doamin'),
+            'id'            => 'post-content',
+            'description'   => __('Widget efter indhold', 'web-doamin'),
+            'before_widget' => '<div id="%1$s" class="widget post-content-col %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4 class="widget-title widget-title-post-content">',
+            'after_title'   => '</h4>',
+        )
+    );
+
     // Footer
     register_sidebar(
         array(

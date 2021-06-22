@@ -81,7 +81,9 @@ p {
         }
     }
 }
-
+ article .bx-wrapper p {
+    max-width: none;
+ }
 a {
     color: var(--link);
     text-decoration: underline;
@@ -152,5 +154,14 @@ hr {
         &:last-of-type {
             margin: 0;
         }
+    }
+}
+.post-edit-link {
+    text-align: right;
+    color: red;
+    text-decoration: none;
+    font-size: .8rem;
+    &:hover {
+        text-decoration: underline;
     }
 }

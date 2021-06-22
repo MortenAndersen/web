@@ -1,20 +1,27 @@
-<?php if (is_active_sidebar('footer')): ?>
-	<div class="page-footer">
-		<div class="wrap grid g-d-4 gap-2">
-			<?php dynamic_sidebar('footer');?>
-		</div>
-  </div>
-<?php endif;?>
+<?php
 
+if (is_active_sidebar('post-content')) {
+    dynamic_sidebar('post-content');
+} 
 
-<?php if (is_active_sidebar('post-footer')): ?>
-	<div class="post-footer">
-		<div class="wrap">
-			<?php dynamic_sidebar('post-footer');?>
-		</div>
-  </div>
-<?php endif;?>
+if (is_active_sidebar('footer')) {
+	echo '<div class="page-footer">';
+		echo '<div class="wrap grid g-d-4 gap-2">';
+			dynamic_sidebar('footer');
+		echo '</div>';
+	echo '</div>';
+}
 
-<?php wp_footer();?>
+if (is_active_sidebar('post-footer')) {
+	echo '<div class="post-footer">';
+		echo '<div class="wrap">';
+			dynamic_sidebar('post-footer');
+		echo '</div>';
+	echo '</div>';
+}
+
+wp_footer();
+
+?>
 </body>
 </html>

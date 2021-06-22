@@ -9,6 +9,17 @@
 	],
 "creatorBuild": "33081",
 "files": {
+	"/block/test-block.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/block/test-block-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -658,6 +669,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/scss/web-chunks.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/web-chunks.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0

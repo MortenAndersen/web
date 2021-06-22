@@ -4,7 +4,7 @@
 .wrap,
 .wp-block-columns {
     margin: 0 auto;
-    max-width: b.$page-width;
+    max-width: var(--page-width);
     padding: s.$gap-n s.$gap-n 0 s.$gap-n;
     &.pad-4 {
         padding: s.$gap-n;

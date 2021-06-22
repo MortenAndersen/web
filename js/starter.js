@@ -46,14 +46,30 @@
 
         // Slider
         $(function(){
-            $('.bxslider').bxSlider({
+            $('.fader').bxSlider({
                 mode: 'fade',
-                captions: true,
-                slideWidth: 600
+                auto: true,
+                controls: false,
+                pager: false,
+                speed: 1200
+
             });
         });
 
-        $('.bx-carousel').bxSlider({
+        $(function(){
+            $('.banner').bxSlider({
+                mode: 'fade',
+                auto: true,
+                controls: false,
+                pager: false,
+                speed: 1200,
+                touchEnabled: false
+
+            });
+        });
+
+        
+        $('.carousel').bxSlider({
             auto: true,
             autoHover: true,
             pager: false,
@@ -65,8 +81,7 @@
             moveSlides: 4,
             mode: 'horizontal',
             nextText: ' > ',
-            prevText: ' < ',
-            adaptiveHeight: true 
+            prevText: ' < '
         });
 
 });

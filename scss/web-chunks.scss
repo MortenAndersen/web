@@ -1,0 +1,54 @@
+@use 'elements/size'as s;
+
+.web-chunk-img {
+	margin-bottom: s.$gap-s;
+}
+.web-chunk-fakta {
+	margin: 0;
+	padding: 0;
+		li {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+}
+.web-chunk-label {
+	margin-right: 1ch;
+}
+.chunk-item {
+	figure {
+		margin: 0 0 s.$gap-n 0;
+	}
+	a:not(.post-edit-link) {
+		color: inherit;
+		&:hover {
+			color: inherit;
+		}
+	}
+}
+.chunk-item-bg {
+	padding: s.$gap-n;
+	background-position: center;
+	background-size: cover;
+}
+.banner {
+	.chunk-item {
+	min-height: 400px;
+	display: flex !important;
+    align-items: center;
+	}
+	.chunk-item-content {
+		max-width: var(--page-width);
+		width: 100%;
+		margin: 0 auto;
+		padding-left: s.$gap-n;
+		padding-right: s.$gap-n;
+	}
+}
+.chunk-item-content {
+	display: flex;
+    flex-flow: column;
+    height: 100%;
+    line-height: 1.4;
+    font-size: 1rem;
+}
