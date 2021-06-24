@@ -122,7 +122,8 @@
     }
 }
 
-.parallax {
+.parallax:not(.chunk-banner),
+.parallax .chunk-item {
     background-image: url("img/parallax.jpg");
     min-height: 400px;
     background-position: center;
@@ -131,8 +132,22 @@
     color: var(--parallax-font);
 }
 
+.parallax .chunk-item {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    .chunk-item-content {
+        max-width: var(--page-width);
+        padding: 0 s.$gap-n;
+        margin: 0 auto;
+        width: 100%;
+        text-align: right;
+    }
+}
+
 @media (min-width: b.$menu-break) {
-    .parallax {
+    .parallax:not(.chunk-banner),
+    .parallax .chunk-item {
         background-attachment: fixed;
     }
 }
@@ -160,5 +175,19 @@
     }
     .img-zoom {
         margin-bottom: 1rem;
+    }
+}
+.reference {
+    max-width: var(--page-width);
+    margin: 1rem auto;
+    padding: 0 s.$gap-n;
+    text-align: right;
+    font-size: .6rem;
+    a {
+        text-decoration: none;
+        color: var(--body-font);
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }

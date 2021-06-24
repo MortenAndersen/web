@@ -62,7 +62,7 @@
                 auto: true,
                 controls: false,
                 pager: false,
-                speed: 1200,
+                speed: 2000,
                 touchEnabled: false
 
             });

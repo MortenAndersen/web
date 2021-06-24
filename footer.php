@@ -19,7 +19,7 @@ if (is_active_sidebar('post-footer')) {
 		echo '</div>';
 	echo '</div>';
 }
-
+web_reference();
 wp_footer();
 
 ?>

@@ -90,3 +90,8 @@ if (!function_exists('web_social_menu')) {
 
     }
 }
+
+// Reference
+function web_reference() {
+    echo '<div class="reference"><a href="https://www.hjemmesider.dk" target="_blank" rel="nofollow">Made by Hjemmesider.dk</a></div>';
+}
