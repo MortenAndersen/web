@@ -191,3 +191,12 @@
         }
     }
 }
+.web-loop-posts {
+    article {
+        padding-bottom: s.$gap-s;
+        border-bottom: 1px solid var(--border);
+    }
+}
+.loop-post-img {
+    margin: s.$gap-s 0;
+}

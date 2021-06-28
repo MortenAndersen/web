@@ -1,9 +1,6 @@
 @use 'elements/size'as s;
 @use 'elements/breakpoints'as b;
 
-:root {
-    --body-color: red;
-}
 
 body {
     background-color: var(--body-bg);
@@ -27,6 +24,9 @@ h6 {
     a {
         text-decoration: none;
         color: inherit;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     article & {
@@ -41,6 +41,9 @@ h6 {
     padding-bottom: .5rem;
     margin-bottom: 1.5rem;
     border-bottom: 1px solid var(--border);
+}
+.loop-title {
+    font-size: s.$font-l;
 }
 
 .entry-title {

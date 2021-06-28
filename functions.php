@@ -73,3 +73,6 @@ require get_parent_theme_file_path('/inc/widgets.php');
 
 // Theme functions
 require get_parent_theme_file_path('/inc/web-functions.php');
+
+// Theme shortcode
+require get_parent_theme_file_path('/inc/shortcode.php');

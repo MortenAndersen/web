@@ -10,6 +10,9 @@
         padding: s.$gap-n;
     }
 }
+.textwidget .wrap {
+    padding: s.$gap-n;
+}
 .wp-block-columns {
     padding: s.$gap-n * 2 s.$gap-n s.$gap-n s.$gap-n;
 }
@@ -45,7 +48,7 @@ main {
 }
 
 article {
-    overflow: hidden;
+    //overflow: hidden;
 }
 
 aside {
