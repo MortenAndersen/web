@@ -10,6 +10,12 @@
         padding: s.$gap-n;
     }
 }
+.wrap-no-pad {
+     margin: 0 auto;
+    max-width: var(--page-width);
+    padding-left: s.$gap-n;
+    padding-right: s.$gap-n;
+}
 .textwidget .wrap {
     padding: s.$gap-n;
 }
