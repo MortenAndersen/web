@@ -5,7 +5,7 @@ function web_post($atts) {
     ob_start();
 
     // define attributes and their defaults
-    extract(shortcode_atts(array('number' => '2', 'img' => 'yes', 'read_more' => 'yes' ), $atts));
+    extract(shortcode_atts(array('number' => '2', 'img' => 'yes', 'read_more' => 'yes', 'link' => 'yes' ), $atts));
 
 
 /* -------------------------------------- */
@@ -24,7 +24,13 @@ if ( $loop->have_posts() ) {
 		while ( $loop->have_posts() ) : $loop->the_post();
 			$classes = get_post_class( '', $post->ID );
 			echo '<article class="' . esc_attr( implode( ' ', $classes ) ) . '">';
-            echo '<h3 class="loop-title"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></h3>';
+
+            if ( $link == 'yes') {
+                echo '<h3 class="loop-title"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></h3>';
+            } else {
+                echo '<h3 class="loop-title">' . get_the_title() . '</h3>';
+            }
+
             if ( has_post_thumbnail() && $img == 'yes' ) {
                 echo '<div class="loop-post-img">';
                     echo '<div class="img-zoom">';

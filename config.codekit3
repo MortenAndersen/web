@@ -434,6 +434,19 @@
 		"oS": 3,
 		"sct": 0
 		},
+	"/scss/cards.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/cards.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
 	"/scss/elements.scss": {
 		"aP": 0,
 		"bl": 0,

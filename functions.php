@@ -8,11 +8,14 @@ add_action('init', function () {
     add_action('wp_footer', 'wp_print_head_scripts', 5);
 });
 
+
 // Theme jQuery fil
 function web_scripts()
 {
     wp_register_script('theme-script', get_template_directory_uri() . '/js/starter-min.js', array('jquery'));
     wp_enqueue_script('theme-script');
+
+    wp_enqueue_style( 'web', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
 }
 add_action('wp_enqueue_scripts', 'web_scripts');
 
@@ -20,7 +23,7 @@ add_action('wp_enqueue_scripts', 'web_scripts');
 // The Excerpt length
 
 function web_custom_excerpt_length( $length ) {
-    return 12;
+    return 30;
 }
 add_filter( 'excerpt_length', 'web_custom_excerpt_length', 999 );
 
@@ -73,6 +76,7 @@ if (!function_exists('web_setup')):
     }
     add_action('after_setup_theme', 'web_setup');
 endif;
+
 
 // ---------------------------------------------------
 

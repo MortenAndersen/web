@@ -1,0 +1,31 @@
+@use 'elements/size'as s;
+@use 'elements/breakpoints'as b;
+
+.card1 {
+	padding-bottom: s.$gap-n;
+	&:hover {
+    	.chunk-item-content {
+    		opacity:0.3;
+    	}
+    }
+    .chunk-item-content {
+       	border: 1px solid var(--border)
+;        transform-origin: center;
+        transform: perspective(800px) rotateY(25deg);
+        transition: 0.5s;
+        &:hover {
+        	transform:perspective(800px)       rotateY(0deg);
+  			opacity:1;
+        }
+        img {
+        	 width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+        -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+        }
+    }
+    .web-chunk-txt {
+    	padding: 0 1rem;
+    }
+}
