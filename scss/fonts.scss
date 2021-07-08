@@ -24,6 +24,7 @@ h6 {
     a {
         text-decoration: none;
         color: inherit;
+
         &:hover {
             text-decoration: underline;
         }
@@ -42,6 +43,7 @@ h6 {
     margin-bottom: 1.5rem;
     border-bottom: 1px solid var(--border);
 }
+
 .loop-title {
     font-size: s.$font-l;
 }
@@ -69,7 +71,7 @@ p {
             text-decoration: none;
 
             &:hover {
-                
+
                 &:before {
                     opacity: 1;
                 }
@@ -83,16 +85,24 @@ p {
             }
         }
     }
+
+    &:empty {
+        display: none;
+    }
 }
- article .bx-wrapper p {
+
+article .bx-wrapper p {
     max-width: none;
- }
+}
+
 a {
     color: var(--link);
     text-decoration: underline;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
     .page-footer & {
         color: inherit;
+
         &:hover {
             color: inherit;
         }
@@ -141,6 +151,12 @@ hr {
     }
 }
 
+article {
+    li {
+        max-width: 90ch;
+    }
+}
+
 .bold {
     font-weight: bold;
 }
@@ -159,11 +175,13 @@ hr {
         }
     }
 }
+
 .post-edit-link {
     text-align: right;
     color: red;
     text-decoration: none;
     font-size: .8rem;
+
     &:hover {
         text-decoration: underline;
     }
