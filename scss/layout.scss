@@ -160,12 +160,12 @@ aside {
         display: grid;
         grid-template-columns: 1fr s.$aside-width;
 
-        .right-aside {
+        .left-aside {
             order: 3;
             grid-column: 1 / -1;
         }
 
-        .left-aside {
+        .right-aside {
             order: 2;
         }
 
@@ -180,12 +180,12 @@ aside {
         display: grid;
         grid-template-columns: s.$aside-width 1fr s.$aside-width;
 
-        .right-aside {
+        .left-aside {
             order: 1;
             grid-column: unset;
         }
 
-        .left-aside {
+        .right-aside {
             order: 3;
         }
 

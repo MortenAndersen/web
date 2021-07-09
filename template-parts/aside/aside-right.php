@@ -1,6 +1,11 @@
 <?php
-if (is_active_sidebar('aside-right')):
+if( class_exists('ACF') ) {
     echo '<aside class="right-aside">';
-    dynamic_sidebar('aside-right');
+        dynamic_sidebar('aside-right');
+        the_field('aside_right');
     echo '</aside>';
-endif;
+} else {
+    echo '<aside class="right-aside">';
+        dynamic_sidebar('aside-right');
+    echo '</aside>';
+}

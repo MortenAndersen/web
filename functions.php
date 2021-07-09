@@ -88,3 +88,8 @@ require get_parent_theme_file_path('/inc/web-functions.php');
 
 // Theme shortcode
 require get_parent_theme_file_path('/inc/shortcode.php');
+
+if( class_exists('ACF') ) {
+    // ACF
+    require get_parent_theme_file_path('/inc/acf.php');
+}
