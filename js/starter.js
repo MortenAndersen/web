@@ -42,7 +42,7 @@
         $('.video, .wp-block-embed__wrapper').fitVids();
 
         // Lightbox
-        $('.lightbox-link').attr('data-lightbox', 'content-image');
+        $('.lightbox-link, .overlay a').attr('data-lightbox', 'content-image');
 
         // Slider
         $(function(){
