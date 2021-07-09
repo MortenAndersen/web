@@ -6,8 +6,8 @@ body {
     background-color: var(--body-bg);
     color: var(--body-font);
     font-family: "Source Sans Pro", sans-serif;
-    line-height: 1.5;
-    font-size: 1.1em;
+    line-height: var(--body-line-height);
+    font-size: var(--body-font-size);
 }
 
 h1,
