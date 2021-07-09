@@ -22,7 +22,10 @@
 .post-img {
     margin-bottom: s.$gap-n;
 }
-
+article > .post-img {
+    border-bottom: 1px solid;
+    padding-bottom: s.$gap-s;
+}
 .color {
     overflow: hidden;
 }
