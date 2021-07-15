@@ -160,7 +160,8 @@
     }
     p.read-more {
         background: rgba(0,0,0,.2);
-        padding: .5rem 1rem;
+        padding: .5rem s.$gap-s;
+        margin: s.$gap-s 0;
         border: 1px solid #ffffff42;
         text-align: center;
         border-radius: 5px;

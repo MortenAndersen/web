@@ -131,6 +131,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/img/mail.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/mail.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/img/menu-icon-close.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -179,6 +189,16 @@
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
+		},
+	"/img/phone.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/phone.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/img/slider/bx_loader.gif": {
 		"ft": 4194304,

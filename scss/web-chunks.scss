@@ -12,6 +12,36 @@
         margin: 0;
         padding: 0;
         list-style-type: none;
+        &.facebook-icon:before,
+        &.twitter-icon:before,
+        &.youtube-icon:before,
+        &.email-icon:before,
+        &.phone-icon:before,
+        &.linkedin-icon:before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 1ch;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-image: url(img/facebook.svg);        }
+        &.twitter-icon:before {
+            background-image: url(img/twitter.svg);
+        }
+        &.youtube-icon:before {
+            background-image: url(img/youtube.svg);
+        }
+        &.linkedin-icon:before {
+            background-image: url(img/linkedin.svg);
+        }
+        &.phone-icon:before {
+            background-image: url(img/phone.svg);
+        }
+        &.email-icon:before {
+            background-image: url(img/mail.svg);
+        }
+
     }
 }
 
