@@ -45,6 +45,13 @@
     }
     .strong {
         font-weight: bold;
+        padding-bottom: .5rem
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
