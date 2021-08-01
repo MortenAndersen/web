@@ -84,6 +84,17 @@
             prevText: ' < '
         });
 
+        // Detect scroll
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 100) {
+                $('.sticky-header').addClass("scroll-menu");
+            } else {
+                $('.sticky-header').removeClass("scroll-menu");
+            }
+        });
+
 });
 
 }(jQuery));
