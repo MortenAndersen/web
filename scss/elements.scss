@@ -4,7 +4,7 @@
 .search-results {
     margin-bottom: s.$gap-n;
 
-    li {
+    > li {
         margin-bottom: s.$gap-s;
     }
 }

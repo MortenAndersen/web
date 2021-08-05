@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "33081",
 "files": {
+	"/404.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/404.php",
+		"oF": 0
+		},
 	"/block/test-block.js": {
 		"bF": 0,
 		"ft": 64,
@@ -825,6 +833,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/content/blog-loop.php",
+		"oF": 0
+		},
+	"/template-parts/content/page-404.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content/page-404.php",
 		"oF": 0
 		},
 	"/template-parts/content/page-article-aside-left-right.php": {
