@@ -20,7 +20,10 @@
     padding:  3rem s.$gap-n;
 }
 .wp-block-columns {
-    padding: s.$gap-n * 2 s.$gap-n s.$gap-n s.$gap-n;
+    padding: 0;
+    .page-template-page-no-wrap & {
+        padding: s.$gap-n * 2 s.$gap-n s.$gap-n s.$gap-n;
+    }
 }
 @media (min-width: b.$phone) {
     .wrap {
