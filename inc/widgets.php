@@ -92,6 +92,19 @@ function mother_widgets_init()
         )
     );
 
+    // 404 widget
+    register_sidebar(
+        array(
+            'name'          => __('404', 'web-doamin'),
+            'id'            => 'no-page',
+            'description'   => __('404 siden', 'web-doamin'),
+            'before_widget' => '<div id="%1$s" class="widget widget-pmenu %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h5 class="widget-title widget-title-404-widget">',
+            'after_title'   => '</h5>',
+        )
+    );
+
 }
 
 add_action('widgets_init', 'mother_widgets_init');
