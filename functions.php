@@ -77,6 +77,12 @@ if (!function_exists('web_setup')):
     add_action('after_setup_theme', 'web_setup');
 endif;
 
+// Sprogfiler
+function web_localize_theme() {
+  load_theme_textdomain( 'web-domain', get_template_directory() . '/languages' );
+}
+
+add_action( 'after_setup_theme', 'web_localize_theme' );
 
 // ---------------------------------------------------
 
