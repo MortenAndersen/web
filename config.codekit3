@@ -396,6 +396,22 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/languages/da_DK.mo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/languages/da_DK.mo",
+		"oF": 0
+		},
+	"/languages/da_DK.po": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/languages/da_DK.po",
+		"oF": 0
+		},
 	"/page-aside-left-right.php": {
 		"cB": 0,
 		"ft": 8192,
