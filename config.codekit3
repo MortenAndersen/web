@@ -185,19 +185,6 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/img/parallax.jpg": {
-		"ft": 16384,
-		"iS": 104775,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/parallax.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"ou": "lpckwebp-none",
-		"q": 100,
-		"rq": 75
-		},
 	"/img/phone.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -742,6 +729,19 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/style.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/scss/table.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/table.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0
