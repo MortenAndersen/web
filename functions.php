@@ -19,6 +19,13 @@ function web_scripts()
 }
 add_action('wp_enqueue_scripts', 'web_scripts');
 
+
+// Google fonts
+add_action( 'wp_enqueue_scripts', 'web_google_fonts' );
+function web_google_fonts() {
+    wp_enqueue_style( 'web-google-fonts', 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap', false ); 
+}
+
 // ---------------------------------------------------
 // The Excerpt length
 

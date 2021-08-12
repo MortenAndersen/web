@@ -5,9 +5,14 @@
 body {
     background-color: var(--body-bg);
     color: var(--body-font);
-    font-family: "Source Sans Pro", sans-serif;
+    // font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: var(--body-line-height);
     font-size: var(--body-font-size);
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+
 }
 
 h1,
@@ -36,6 +41,8 @@ h6 {
     }
 }
 article {
+    line-height: var(--article-line-height);
+    font-size: var(--article-font-size);
     h2 {
         font-size: 1.6rem;
         margin-top: 3rem;
@@ -167,8 +174,10 @@ article {
     }
 }
 
+b,
+strong,
 .bold {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .caption {
