@@ -2,7 +2,7 @@
 @use 'elements/size'as s;
 
 @media (min-width: b.$menu-break) {
-    .menu {
+    .site-menu {
         display: flex; //block;
         flex: auto;
         font-size: s.$font-s;

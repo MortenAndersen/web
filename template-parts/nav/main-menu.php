@@ -5,7 +5,7 @@ if (has_nav_menu('main-menu')):
     'container'      => false,
     'items_wrap'     => '<ul>' . "\n" . '%3$s</ul>',
 );
-echo '<nav class="menu js-nav-toggle ';
+echo '<nav class="site-menu js-nav-toggle ';
     web_menu_pos();
     echo '">';
     get_template_part('img/menu', 'icon-close');
