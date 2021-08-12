@@ -590,6 +590,19 @@
 		"oS": 3,
 		"sct": 0
 		},
+	"/scss/keyframe.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/keyframe.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
 	"/scss/layout.scss": {
 		"aP": 0,
 		"bl": 0,

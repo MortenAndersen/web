@@ -93,7 +93,7 @@
     }
 }
 
-.banner {
+.chunk-banner {
     .chunk-item {
         min-height: 400px;
         display: flex !important;
@@ -106,6 +106,14 @@
         margin: 0 auto;
         padding-left: s.$gap-n;
         padding-right: s.$gap-n;
+    }
+    &.zoombanner {
+        .chunk-item {
+            animation-name: zoomin;
+            animation-duration: 10s;
+            animation-fill-mode: forwards;
+            background-attachment: inherit;
+        }
     }
 }
 
