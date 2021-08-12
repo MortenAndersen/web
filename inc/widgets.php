@@ -53,6 +53,19 @@ function mother_widgets_init()
         )
     );
 
+    // Post content Frontpage
+    register_sidebar(
+        array(
+            'name'          => __('Post content Frontpage', 'web-doamin'),
+            'id'            => 'post-content-frontpage',
+            'description'   => __('Widget efter indhold på forsiden', 'web-doamin'),
+            'before_widget' => '<div id="%1$s" class="widget post-content-col %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4 class="widget-title widget-title-post-content">',
+            'after_title'   => '</h4>',
+        )
+    );
+
     // Footer
     register_sidebar(
         array(
