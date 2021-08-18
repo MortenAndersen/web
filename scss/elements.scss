@@ -207,6 +207,8 @@ article > .post-img {
 .logo {
     transform-origin: center left;
     transition: transform 1s ease;
+    margin: .5rem;
+    margin-left: 0;
 }
 .scroll-menu {
     .logo {
@@ -214,5 +216,8 @@ article > .post-img {
     }
     .name {
         display: none;
+    }
+    .logo {
+        margin: 0;
     }
 }
