@@ -14,9 +14,10 @@
 <header class="page-header <?php web_header_sticky();?>">
 	<div class="flex <?php web_header_style(); ?>">
 		<?php web_logo();?>
-			<div class="menu-icon">
-				<?php get_template_part('img/menu', 'icon');?>
-			</div>
+		<?php web_site_info();?>
+		<div class="menu-icon">
+			<?php get_template_part('img/menu', 'icon');?>
+		</div>
 			<?php get_template_part('template-parts/nav/main', 'menu');?>
 	</div>
 </header>

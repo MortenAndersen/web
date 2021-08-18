@@ -198,3 +198,21 @@ article > .post-img {
 .loop-post-img {
     margin: s.$gap-s 0;
 }
+.name {
+    margin: 0 1rem;
+    span {
+        display: block;
+    }
+}
+.logo {
+    transform-origin: center left;
+    transition: transform 1s ease;
+}
+.scroll-menu {
+    .logo {
+        transform: scale(0.6);
+    }
+    .name {
+        display: none;
+    }
+}

@@ -16,4 +16,7 @@
 
 .a-center {
     align-items: center;
+    .page-header & {
+        padding: .5rem 2rem;
+    }
 }

@@ -13,6 +13,21 @@ function web_logo()
     }
 }
 
+function web_site_info()
+{
+    if ( get_bloginfo( 'name' )  !== '' ) { 
+    
+
+        echo '<div class="name">';
+        echo '<span class="blog-name">' . get_bloginfo( 'name' ) . '</span>';
+        
+        if ( get_bloginfo( 'description' )  !== '' ) {
+            echo '<span class="blog-desc">' . get_bloginfo('description') . '</span>';
+  } 
+        echo '</div>';
+ } 
+}
+
 // BackButton
 
 function web_go_back()
