@@ -45,16 +45,6 @@
         $('.lightbox-link, .overlay a').attr('data-lightbox', 'content-image');
 
         // Slider
-        $(function(){
-            $('.fader').bxSlider({
-                mode: 'fade',
-                auto: true,
-                controls: false,
-                pager: false,
-                speed: 1200
-
-            });
-        });
 
         $(function(){
             $('.banner').bxSlider({
@@ -66,22 +56,6 @@
                 touchEnabled: false
 
             });
-        });
-
-        
-        $('.carousel').bxSlider({
-            auto: true,
-            autoHover: true,
-            pager: false,
-            shrinkItems: true,
-            minSlides: 1,
-            maxSlides: 9,
-            slideWidth: 269,
-            slideMargin: 20,
-            moveSlides: 4,
-            mode: 'horizontal',
-            nextText: ' > ',
-            prevText: ' < '
         });
 
         // Detect scroll

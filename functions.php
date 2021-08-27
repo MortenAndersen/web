@@ -51,8 +51,6 @@ if (!function_exists('web_setup')):
         remove_action('wp_head', 'wlwmanifest_link');
         remove_action('wp_head', 'wp_generator');
 
-        add_filter( 'wp_lazy_loading_enabled', '__return_false' ); // skal nok fjernes ... men sikre at bx_slider carousel virker
-
         // HTML5
         add_theme_support('html5', array(
             'comment-form',
