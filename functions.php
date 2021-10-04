@@ -8,7 +8,6 @@ add_action('init', function () {
     add_action('wp_footer', 'wp_print_head_scripts', 5);
 });
 
-
 // Theme jQuery fil
 function web_scripts()
 {
@@ -33,7 +32,6 @@ function web_custom_excerpt_length( $length ) {
     return 30;
 }
 add_filter( 'excerpt_length', 'web_custom_excerpt_length', 999 );
-
 
 // ---------------------------------------------------
 
@@ -101,8 +99,6 @@ function crunchify_stop_loading_wp_embed_and_jquery() {
     }
 }
 add_action('init', 'crunchify_stop_loading_wp_embed_and_jquery');
-
-
 
 //Remove JQuery migrate
 function remove_jquery_migrate($scripts)
