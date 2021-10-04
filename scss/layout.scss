@@ -44,8 +44,6 @@ section {
 }
 .page-header {
     line-height: 1;
-    padding-left: s.$gap-n;
-    padding-right: s.$gap-n;
 }
 
 main {
@@ -114,6 +112,9 @@ aside {
         top: 0;
         z-index: 9999;
         //box-shadow: 0 0 20px rgb(0 0 0 / 5%);
+        .admin-bar & {
+            top: 32px;
+        }
     }
 }
 

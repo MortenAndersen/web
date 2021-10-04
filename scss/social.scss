@@ -120,22 +120,23 @@
 
 
 .social {
+    margin-left: auto;
+        display: flex;
     img {
         height: 30px;
-        margin: 15px 0;
+        margin: 15px;
     }
 }
 
+.site-menu .social a {
+    border-bottom: none;
+}
 
 @media (min-width: b.$menu-break) {
-    .social {
-        margin-left: auto;
-        display: flex;
 
-        img {
-            height: 1rem;
-            margin: 0;
+    nav {
+        .social {
+            display: none;
         }
     }
-
 }

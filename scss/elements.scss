@@ -123,7 +123,7 @@ article > .post-img {
 
 .parallax:not(.chunk-banner),
 .parallax .chunk-item {
-    background-image: url("img/parallax.jpg");
+    //background-image: url("img/parallax.jpg");
     min-height: 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -205,20 +205,26 @@ article > .post-img {
     }
 }
 .logo {
-    transform-origin: center left;
-    transition: transform 1s ease;
-    margin: .5rem;
-    margin-left: 0;
+ 
+    
+    margin: .5rem 0;
+
+    img {
+        transition: 1s all;
+        transition: 300ms all cubic-bezier(.4,0,.2,1);
+    max-height: 200px;
+    }
 }
 .scroll-menu {
-    .logo {
-        transform: scale(0.6);
-    }
+    
     .name {
         display: none;
     }
     .logo {
-        margin: 0;
+        img {
+            max-height: 50px;
+            width: auto;
+        }
     }
 }
 

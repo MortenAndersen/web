@@ -59,7 +59,7 @@ function web_edit_link()
 if (!function_exists('web_header_style')) {
     function web_header_style()
     {
-        echo 'a-baseline';
+        echo 'a-baseline wrap-no-pad';
     }
 }
 
@@ -88,7 +88,7 @@ function web_thumbnail() {
 if (!function_exists('web_menu_pos')) {
     function web_menu_pos()
     {
-        echo 'left-align';
+        echo 'right-align';
     }
 }
 

@@ -157,16 +157,6 @@
 		"oAP": "/img/menu-icon-close.php",
 		"oF": 0
 		},
-	"/img/menu-icon-close.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/menu-icon-close.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
 	"/img/menu-icon.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -174,16 +164,6 @@
 		"oA": 0,
 		"oAP": "/img/menu-icon.php",
 		"oF": 0
-		},
-	"/img/menu-icon.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/menu-icon.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
 		},
 	"/img/phone.svg": {
 		"ft": 2097152,
@@ -437,6 +417,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-no-wrap.php",
+		"oF": 0
+		},
+	"/page-oversigt.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-oversigt.php",
 		"oF": 0
 		},
 	"/page.php": {
@@ -910,6 +898,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/content/page-article.php",
+		"oF": 0
+		},
+	"/template-parts/content/page-oversigt.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content/page-oversigt.php",
 		"oF": 0
 		},
 	"/template-parts/content/page-search.php": {

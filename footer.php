@@ -19,6 +19,7 @@ if (is_active_sidebar('footer')) {
 if (is_active_sidebar('post-footer')) {
 	echo '<div class="post-footer">';
 		echo '<div class="wrap">';
+		web_social_menu();
 			dynamic_sidebar('post-footer');
 		echo '</div>';
 	echo '</div>';

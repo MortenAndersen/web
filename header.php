@@ -14,7 +14,7 @@
 <header class="page-header <?php web_header_sticky();?>">
 	<div class="flex <?php web_header_style(); ?>">
 		<?php web_logo();?>
-		<?php web_site_info();?>
+		<?php // web_site_info();?>
 		<div class="menu-icon">
 			<?php get_template_part('img/menu', 'icon');?>
 		</div>
