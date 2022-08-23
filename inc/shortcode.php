@@ -40,7 +40,11 @@ if ( $loop->have_posts() ) {
                     echo '</div>';
                 echo '</div>';
             }
-            the_excerpt();
+            if ( $link == 'yes') {
+                the_excerpt();
+            } else {
+                the_content();
+            }
             if ( $read_more == 'yes') {
                 web_read_more();
             }
