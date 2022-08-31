@@ -129,6 +129,7 @@ require get_parent_theme_file_path('/inc/web-functions.php');
 require get_parent_theme_file_path('/inc/shortcode.php');
 
 if( class_exists('ACF') ) {
-    // ACF
+    require get_parent_theme_file_path( '/inc/gutenberg/acf-blocks.php' );
+    require get_parent_theme_file_path('/inc/accordion-acf.php');
     require get_parent_theme_file_path('/inc/acf.php');
 }

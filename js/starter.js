@@ -58,6 +58,13 @@
             });
         });
 
+        // Accordion
+        $('.acc-head').click(function(){
+            $(this).toggleClass('active');
+            $(this).parent().find('.arrow').toggleClass('arrow-animate');
+            $(this).parent().find('.acc-content').slideToggle(280);
+        });
+
         // Detect scroll
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
